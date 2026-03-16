@@ -1,0 +1,1199 @@
+- model: book.book
+  pk: 1
+  fields:
+    title: Pride and Prejudice
+    author: 1
+    isbn: '9780141439518'
+    summary: A romantic novel following Elizabeth Bennet as she navigates issues of manners, morality, and marriage.
+    publication_date: 1813-01-28
+    price: '12.99'
+    pages: 432
+    categories: [1, 2, 3]
+
+- model: book.book
+  pk: 2
+  fields:
+    title: Sense and Sensibility
+    author: 1
+    isbn: '9780141439662'
+    summary: The story of the Dashwood sisters and their experiences with love and heartbreak.
+    publication_date: 1811-10-30
+    price: '11.99'
+    pages: 409
+    categories: [1, 2, 3]
+
+- model: book.book
+  pk: 3
+  fields:
+    title: Emma
+    author: 1
+    isbn: '9780141439587'
+    summary: The story of Emma Woodhouse, a young woman who fancies herself a matchmaker.
+    publication_date: 1815-12-23
+    price: '13.99'
+    pages: 474
+    categories: [1, 2, 3, 17]
+
+- model: book.book
+  pk: 4
+  fields:
+    title: Oliver Twist
+    author: 2
+    isbn: '9780141439747'
+    summary: The story of an orphan boy who escapes a workhouse and falls in with a gang of thieves.
+    publication_date: 1838-02-01
+    price: '10.99'
+    pages: 608
+    categories: [1, 2, 10, 20]
+
+- model: book.book
+  pk: 5
+  fields:
+    title: A Tale of Two Cities
+    author: 2
+    isbn: '9780141439600'
+    summary: A historical novel set during the French Revolution.
+    publication_date: 1859-04-30
+    price: '11.99'
+    pages: 489
+    categories: [1, 2, 9]
+
+- model: book.book
+  pk: 6
+  fields:
+    title: Great Expectations
+    author: 2
+    isbn: '9780141439563'
+    summary: The story of orphan Pip and his journey from childhood to adulthood.
+    publication_date: 1861-08-01
+    price: '12.99'
+    pages: 544
+    categories: [1, 2, 10]
+
+- model: book.book
+  pk: 7
+  fields:
+    title: David Copperfield
+    author: 2
+    isbn: '9780140439441'
+    summary: A coming-of-age story told from the perspective of David Copperfield.
+    publication_date: 1850-11-01
+    price: '14.99'
+    pages: 882
+    categories: [1, 2, 10]
+
+- model: book.book
+  pk: 8
+  fields:
+    title: Adventures of Huckleberry Finn
+    author: 3
+    isbn: '9780142437179'
+    summary: The adventures of a young boy and a runaway slave rafting down the Mississippi River.
+    publication_date: 1884-12-10
+    price: '9.99'
+    pages: 366
+    categories: [1, 2, 7, 11]
+
+- model: book.book
+  pk: 9
+  fields:
+    title: The Adventures of Tom Sawyer
+    author: 3
+    isbn: '9780143039563'
+    summary: The mischievous adventures of a young boy growing up along the Mississippi River.
+    publication_date: 1876-06-01
+    price: '8.99'
+    pages: 274
+    categories: [1, 2, 7, 14]
+
+- model: book.book
+  pk: 10
+  fields:
+    title: A Connecticut Yankee in King Arthur's Court
+    author: 3
+    isbn: '9780140430646'
+    summary: A 19th-century American is transported back to the time of King Arthur.
+    publication_date: 1889-12-01
+    price: '10.99'
+    pages: 469
+    categories: [1, 6, 8, 11]
+
+- model: book.book
+  pk: 11
+  fields:
+    title: War and Peace
+    author: 4
+    isbn: '9780140447934'
+    summary: An epic novel depicting Russian society during the Napoleonic Wars.
+    publication_date: 1869-01-01
+    price: '18.99'
+    pages: 1225
+    categories: [1, 2, 9]
+
+- model: book.book
+  pk: 12
+  fields:
+    title: Anna Karenina
+    author: 4
+    isbn: '9780143035008'
+    summary: A tragic love story set against the backdrop of Russian high society.
+    publication_date: 1877-04-01
+    price: '15.99'
+    pages: 864
+    categories: [1, 2, 3, 16]
+
+- model: book.book
+  pk: 13
+  fields:
+    title: Crime and Punishment
+    author: 5
+    isbn: '9780143058144'
+    summary: A psychological drama following a poor ex-student who commits murder.
+    publication_date: 1866-01-01
+    price: '14.99'
+    pages: 671
+    categories: [1, 2, 12, 19]
+
+- model: book.book
+  pk: 14
+  fields:
+    title: The Brothers Karamazov
+    author: 5
+    isbn: '9780374528379'
+    summary: A philosophical novel exploring faith, doubt, and morality.
+    publication_date: 1880-11-01
+    price: '16.99'
+    pages: 796
+    categories: [1, 2, 12]
+
+- model: book.book
+  pk: 15
+  fields:
+    title: The Idiot
+    author: 5
+    isbn: '9780140447927'
+    summary: The story of Prince Myshkin, a Christ-like figure in Russian society.
+    publication_date: 1869-01-01
+    price: '13.99'
+    pages: 656
+    categories: [1, 2, 12]
+
+- model: book.book
+  pk: 16
+  fields:
+    title: Moby-Dick
+    author: 6
+    isbn: '9780142437247'
+    summary: The voyage of the whaling ship Pequod and its captain's obsession with a white whale.
+    publication_date: 1851-10-18
+    price: '14.99'
+    pages: 720
+    categories: [1, 2, 7]
+
+- model: book.book
+  pk: 17
+  fields:
+    title: The Picture of Dorian Gray
+    author: 7
+    isbn: '9780141439570'
+    summary: A young man sells his soul for eternal youth while his portrait ages.
+    publication_date: 1890-07-01
+    price: '11.99'
+    pages: 254
+    categories: [1, 2, 15]
+
+- model: book.book
+  pk: 18
+  fields:
+    title: The Importance of Being Earnest
+    author: 7
+    isbn: '9780486264783'
+    summary: A comedy about two men who both use the alias Ernest to escape obligations.
+    publication_date: 1895-02-14
+    price: '7.99'
+    pages: 80
+    categories: [10, 17]
+
+- model: book.book
+  pk: 19
+  fields:
+    title: The Fall of the House of Usher
+    author: 8
+    isbn: '9780141439815'
+    summary: A collection of short stories exploring themes of death and horror.
+    publication_date: 1839-09-01
+    price: '9.99'
+    pages: 192
+    categories: [1, 5, 15]
+
+- model: book.book
+  pk: 20
+  fields:
+    title: The Raven and Other Poems
+    author: 8
+    isbn: '9780486266855'
+    summary: A collection of poetry including the famous poem The Raven.
+    publication_date: 1845-11-01
+    price: '6.99'
+    pages: 96
+    categories: [13]
+
+- model: book.book
+  pk: 21
+  fields:
+    title: Les Misérables
+    author: 9
+    isbn: '9780140444308'
+    summary: An epic tale of redemption following Jean Valjean in 19th-century France.
+    publication_date: 1862-04-03
+    price: '17.99'
+    pages: 1463
+    categories: [1, 2, 9, 10]
+
+- model: book.book
+  pk: 22
+  fields:
+    title: The Hunchback of Notre-Dame
+    author: 9
+    isbn: '9780140443530'
+    summary: The story of Quasimodo, the bell-ringer of Notre-Dame Cathedral.
+    publication_date: 1831-01-14
+    price: '13.99'
+    pages: 560
+    categories: [1, 2, 9, 3]
+
+- model: book.book
+  pk: 23
+  fields:
+    title: A Study in Scarlet
+    author: 10
+    isbn: '9780140439083'
+    summary: The first novel featuring detective Sherlock Holmes.
+    publication_date: 1887-11-01
+    price: '8.99'
+    pages: 96
+    categories: [1, 4, 19]
+
+- model: book.book
+  pk: 24
+  fields:
+    title: The Hound of the Baskervilles
+    author: 10
+    isbn: '9780140437867'
+    summary: Sherlock Holmes investigates a supernatural hound terrorizing a family.
+    publication_date: 1902-04-01
+    price: '9.99'
+    pages: 256
+    categories: [1, 4, 19]
+
+- model: book.book
+  pk: 25
+  fields:
+    title: The Sign of the Four
+    author: 10
+    isbn: '9780140439076'
+    summary: Sherlock Holmes investigates a case involving a stolen treasure.
+    publication_date: 1890-02-01
+    price: '8.99'
+    pages: 144
+    categories: [1, 4, 19]
+
+- model: book.book
+  pk: 26
+  fields:
+    title: The Time Machine
+    author: 11
+    isbn: '9780141439976'
+    summary: A scientist travels through time to the distant future.
+    publication_date: 1895-05-07
+    price: '9.99'
+    pages: 118
+    categories: [1, 6]
+
+- model: book.book
+  pk: 27
+  fields:
+    title: The War of the Worlds
+    author: 11
+    isbn: '9780141441030'
+    summary: Earth is invaded by Martians in this classic science fiction tale.
+    publication_date: 1898-01-01
+    price: '10.99'
+    pages: 192
+    categories: [1, 6]
+
+- model: book.book
+  pk: 28
+  fields:
+    title: The Invisible Man
+    author: 11
+    isbn: '9780141439983'
+    summary: A scientist discovers the secret of invisibility with dire consequences.
+    publication_date: 1897-01-01
+    price: '8.99'
+    pages: 160
+    categories: [1, 6, 5]
+
+- model: book.book
+  pk: 29
+  fields:
+    title: The Island of Doctor Moreau
+    author: 11
+    isbn: '9780141441023'
+    summary: A shipwrecked man discovers an island where a scientist creates human-animal hybrids.
+    publication_date: 1896-04-01
+    price: '9.99'
+    pages: 176
+    categories: [1, 6, 5]
+
+- model: book.book
+  pk: 30
+  fields:
+    title: Twenty Thousand Leagues Under the Sea
+    author: 12
+    isbn: '9780140437492'
+    summary: Captain Nemo takes passengers on an underwater voyage aboard the Nautilus.
+    publication_date: 1870-06-20
+    price: '12.99'
+    pages: 400
+    categories: [1, 6, 7]
+
+- model: book.book
+  pk: 31
+  fields:
+    title: Around the World in Eighty Days
+    author: 12
+    isbn: '9780140449068'
+    summary: Phileas Fogg attempts to circumnavigate the globe in eighty days.
+    publication_date: 1873-01-30
+    price: '10.99'
+    pages: 256
+    categories: [1, 7]
+
+- model: book.book
+  pk: 32
+  fields:
+    title: Journey to the Center of the Earth
+    author: 12
+    isbn: '9780140447873'
+    summary: Professor Lidenbrock leads an expedition to the center of the Earth.
+    publication_date: 1864-11-25
+    price: '11.99'
+    pages: 320
+    categories: [1, 6, 7]
+
+- model: book.book
+  pk: 33
+  fields:
+    title: From the Earth to the Moon
+    author: 12
+    isbn: '9780553214208'
+    summary: A group of Americans attempt to launch themselves to the moon.
+    publication_date: 1865-09-14
+    price: '9.99'
+    pages: 186
+    categories: [1, 6]
+
+- model: book.book
+  pk: 34
+  fields:
+    title: Dracula
+    author: 13
+    isbn: '9780141439846'
+    summary: The classic vampire tale of Count Dracula's attempt to move to England.
+    publication_date: 1897-05-26
+    price: '12.99'
+    pages: 418
+    categories: [1, 5, 15]
+
+- model: book.book
+  pk: 35
+  fields:
+    title: Frankenstein
+    author: 14
+    isbn: '9780141439471'
+    summary: A scientist creates a sapient creature in an unorthodox scientific experiment.
+    publication_date: 1818-01-01
+    price: '10.99'
+    pages: 280
+    categories: [1, 5, 6, 15]
+
+- model: book.book
+  pk: 36
+  fields:
+    title: Jane Eyre
+    author: 15
+    isbn: '9780141441146'
+    summary: The story of a strong-willed orphan girl who becomes a governess.
+    publication_date: 1847-10-16
+    price: '11.99'
+    pages: 532
+    categories: [1, 2, 3, 15]
+
+- model: book.book
+  pk: 37
+  fields:
+    title: Wuthering Heights
+    author: 16
+    isbn: '9780141439556'
+    summary: A tale of passionate and destructive love on the Yorkshire moors.
+    publication_date: 1847-12-01
+    price: '10.99'
+    pages: 416
+    categories: [1, 2, 3, 15]
+
+- model: book.book
+  pk: 38
+  fields:
+    title: Alice's Adventures in Wonderland
+    author: 17
+    isbn: '9780141439761'
+    summary: A girl falls down a rabbit hole into a fantastical underground world.
+    publication_date: 1865-11-26
+    price: '8.99'
+    pages: 96
+    categories: [1, 8, 14]
+
+- model: book.book
+  pk: 39
+  fields:
+    title: Through the Looking-Glass
+    author: 17
+    isbn: '9780140434095'
+    summary: Alice enters a fantastical world by climbing through a mirror.
+    publication_date: 1871-12-27
+    price: '8.99'
+    pages: 224
+    categories: [1, 8, 14]
+
+- model: book.book
+  pk: 40
+  fields:
+    title: Treasure Island
+    author: 18
+    isbn: '9780140437683'
+    summary: A young boy embarks on a perilous voyage to find buried pirate treasure.
+    publication_date: 1883-11-14
+    price: '9.99'
+    pages: 272
+    categories: [1, 7, 14]
+
+- model: book.book
+  pk: 41
+  fields:
+    title: Strange Case of Dr Jekyll and Mr Hyde
+    author: 18
+    isbn: '9780141439730'
+    summary: A London lawyer investigates strange occurrences between his old friend and a sinister figure.
+    publication_date: 1886-01-05
+    price: '7.99'
+    pages: 144
+    categories: [1, 5, 15]
+
+- model: book.book
+  pk: 42
+  fields:
+    title: Kidnapped
+    author: 18
+    isbn: '9780140434941'
+    summary: A young man is kidnapped and has adventures in the Scottish Highlands.
+    publication_date: 1886-07-01
+    price: '9.99'
+    pages: 272
+    categories: [1, 7, 9]
+
+- model: book.book
+  pk: 43
+  fields:
+    title: The Scarlet Letter
+    author: 19
+    isbn: '9780142437261'
+    summary: A woman in Puritan Massachusetts is ostracized for adultery.
+    publication_date: 1850-03-16
+    price: '10.99'
+    pages: 272
+    categories: [1, 2, 9]
+
+- model: book.book
+  pk: 44
+  fields:
+    title: The House of the Seven Gables
+    author: 19
+    isbn: '9780140390056'
+    summary: A New England family lives under a curse from the Salem witch trials.
+    publication_date: 1851-04-01
+    price: '11.99'
+    pages: 320
+    categories: [1, 15]
+
+- model: book.book
+  pk: 45
+  fields:
+    title: The Three Musketeers
+    author: 20
+    isbn: '9780140449266'
+    summary: A young man joins the Musketeers and adventures through 17th-century France.
+    publication_date: 1844-03-14
+    price: '13.99'
+    pages: 640
+    categories: [1, 7, 9]
+
+- model: book.book
+  pk: 46
+  fields:
+    title: The Count of Monte Cristo
+    author: 20
+    isbn: '9780140449266'
+    summary: A man wrongly imprisoned escapes and enacts elaborate revenge.
+    publication_date: 1844-08-28
+    price: '15.99'
+    pages: 1276
+    categories: [1, 7, 9]
+
+- model: book.book
+  pk: 47
+  fields:
+    title: Little Women
+    author: 21
+    isbn: '9780140390698'
+    summary: The story of four sisters growing up in Civil War-era Massachusetts.
+    publication_date: 1868-09-30
+    price: '11.99'
+    pages: 449
+    categories: [1, 2, 14]
+
+- model: book.book
+  pk: 48
+  fields:
+    title: Little Men
+    author: 21
+    isbn: '9780140390179'
+    summary: Jo March runs a school for boys with her husband.
+    publication_date: 1871-06-01
+    price: '10.99'
+    pages: 376
+    categories: [1, 14]
+
+- model: book.book
+  pk: 49
+  fields:
+    title: Gulliver's Travels
+    author: 22
+    isbn: '9780141439495'
+    summary: A ship's surgeon travels to several remote nations of the world.
+    publication_date: 1726-10-28
+    price: '9.99'
+    pages: 336
+    categories: [1, 7, 8, 11]
+
+- model: book.book
+  pk: 50
+  fields:
+    title: Robinson Crusoe
+    author: 23
+    isbn: '9780141439822'
+    summary: A castaway spends 28 years on a remote tropical island.
+    publication_date: 1719-04-25
+    price: '10.99'
+    pages: 320
+    categories: [1, 7]
+
+- model: book.book
+  pk: 51
+  fields:
+    title: Don Quixote
+    author: 24
+    isbn: '9780140449099'
+    summary: A man loses his sanity and decides to become a knight-errant.
+    publication_date: 1605-01-16
+    price: '16.99'
+    pages: 1056
+    categories: [1, 2, 7, 11]
+
+- model: book.book
+  pk: 52
+  fields:
+    title: The Iliad
+    author: 25
+    isbn: '9780140447941'
+    summary: The epic of the Trojan War focusing on the wrath of Achilles.
+    publication_date: null
+    price: '14.99'
+    pages: 704
+    categories: [2, 13, 18]
+
+- model: book.book
+  pk: 53
+  fields:
+    title: The Odyssey
+    author: 25
+    isbn: '9780140449112'
+    summary: The epic journey of Odysseus returning home after the Trojan War.
+    publication_date: null
+    price: '13.99'
+    pages: 544
+    categories: [2, 7, 13, 18]
+
+- model: book.book
+  pk: 54
+  fields:
+    title: The Divine Comedy
+    author: 26
+    isbn: '9780140448955'
+    summary: An allegorical journey through Hell, Purgatory, and Paradise.
+    publication_date: 1320-01-01
+    price: '15.99'
+    pages: 798
+    categories: [2, 13, 18]
+
+- model: book.book
+  pk: 55
+  fields:
+    title: Hamlet
+    author: 27
+    isbn: '9780743477123'
+    summary: The Prince of Denmark seeks revenge for his father's murder.
+    publication_date: 1603-01-01
+    price: '8.99'
+    pages: 342
+    categories: [10, 16]
+
+- model: book.book
+  pk: 56
+  fields:
+    title: Macbeth
+    author: 27
+    isbn: '9780743477109'
+    summary: A Scottish general receives a prophecy that he will become king.
+    publication_date: 1606-01-01
+    price: '7.99'
+    pages: 272
+    categories: [10, 16]
+
+- model: book.book
+  pk: 57
+  fields:
+    title: Romeo and Juliet
+    author: 27
+    isbn: '9780743477116'
+    summary: Two young star-crossed lovers from feuding families.
+    publication_date: 1597-01-01
+    price: '7.99'
+    pages: 320
+    categories: [3, 10, 16]
+
+- model: book.book
+  pk: 58
+  fields:
+    title: Othello
+    author: 27
+    isbn: '9780743477543'
+    summary: A Moorish general is manipulated by his ensign Iago.
+    publication_date: 1604-01-01
+    price: '8.99'
+    pages: 314
+    categories: [10, 16]
+
+- model: book.book
+  pk: 59
+  fields:
+    title: King Lear
+    author: 27
+    isbn: '9780743482769'
+    summary: An aging king divides his kingdom among his three daughters.
+    publication_date: 1606-01-01
+    price: '8.99'
+    pages: 384
+    categories: [10, 16]
+
+- model: book.book
+  pk: 60
+  fields:
+    title: A Midsummer Night's Dream
+    author: 27
+    isbn: '9780743477543'
+    summary: Lovers and fairies in an enchanted forest.
+    publication_date: 1596-01-01
+    price: '7.99'
+    pages: 240
+    categories: [8, 10, 17]
+
+- model: book.book
+  pk: 61
+  fields:
+    title: The Metamorphosis
+    author: 28
+    isbn: '9780553213690'
+    summary: A man wakes up one morning to find himself transformed into a giant insect.
+    publication_date: 1915-10-01
+    price: '8.99'
+    pages: 201
+    categories: [1, 8]
+
+- model: book.book
+  pk: 62
+  fields:
+    title: The Trial
+    author: 28
+    isbn: '9780805209990'
+    summary: A man is arrested and prosecuted by a remote authority for an unspecified crime.
+    publication_date: 1925-04-26
+    price: '12.99'
+    pages: 255
+    categories: [1, 12]
+
+- model: book.book
+  pk: 63
+  fields:
+    title: The Castle
+    author: 28
+    isbn: '9780805211061'
+    summary: A land surveyor struggles to gain access to mysterious authorities of a castle.
+    publication_date: 1926-01-01
+    price: '13.99'
+    pages: 316
+    categories: [1, 8]
+
+- model: book.book
+  pk: 64
+  fields:
+    title: Ulysses
+    author: 29
+    isbn: '9780679722762'
+    summary: A day in the life of Leopold Bloom in Dublin on June 16, 1904.
+    publication_date: 1922-02-02
+    price: '18.99'
+    pages: 730
+    categories: [1, 2]
+
+- model: book.book
+  pk: 65
+  fields:
+    title: Dubliners
+    author: 29
+    isbn: '9780140186475'
+    summary: A collection of fifteen short stories depicting Irish middle-class life.
+    publication_date: 1914-06-15
+    price: '11.99'
+    pages: 224
+    categories: [1]
+
+- model: book.book
+  pk: 66
+  fields:
+    title: A Portrait of the Artist as a Young Man
+    author: 29
+    isbn: '9780142437346'
+    summary: The growth and education of Stephen Dedalus.
+    publication_date: 1916-12-29
+    price: '12.99'
+    pages: 288
+    categories: [1, 2]
+
+- model: book.book
+  pk: 67
+  fields:
+    title: Heart of Darkness
+    author: 30
+    isbn: '9780141441672'
+    summary: A voyage up the Congo River to find a mysterious ivory trader.
+    publication_date: 1899-02-01
+    price: '8.99'
+    pages: 96
+    categories: [1, 2, 7]
+
+- model: book.book
+  pk: 68
+  fields:
+    title: Lord Jim
+    author: 30
+    isbn: '9780140180923'
+    summary: A young British seaman seeks redemption after abandoning a sinking ship.
+    publication_date: 1900-10-01
+    price: '12.99'
+    pages: 384
+    categories: [1, 7]
+
+- model: book.book
+  pk: 69
+  fields:
+    title: Nostromo
+    author: 30
+    isbn: '9780140183719'
+    summary: A tale of revolution and silver in a South American republic.
+    publication_date: 1904-10-01
+    price: '14.99'
+    pages: 560
+    categories: [1, 7]
+
+- model: book.book
+  pk: 70
+  fields:
+    title: The Jungle Book
+    author: 31
+    isbn: '9780141325293'
+    summary: Stories of Mowgli, a boy raised by wolves in the Indian jungle.
+    publication_date: 1894-01-01
+    price: '9.99'
+    pages: 224
+    categories: [1, 7, 14]
+
+- model: book.book
+  pk: 71
+  fields:
+    title: Kim
+    author: 31
+    isbn: '9780140183528'
+    summary: An orphan boy in British India becomes a spy.
+    publication_date: 1901-10-01
+    price: '11.99'
+    pages: 384
+    categories: [1, 7]
+
+- model: book.book
+  pk: 72
+  fields:
+    title: The Call of the Wild
+    author: 32
+    isbn: '9780141321059'
+    summary: A domesticated dog is forced to adapt to the wild during the Klondike Gold Rush.
+    publication_date: 1903-07-01
+    price: '8.99'
+    pages: 144
+    categories: [1, 7]
+
+- model: book.book
+  pk: 73
+  fields:
+    title: White Fang
+    author: 32
+    isbn: '9780141321110'
+    summary: A wild wolf-dog hybrid's journey from the wild to domestication.
+    publication_date: 1906-05-01
+    price: '9.99'
+    pages: 298
+    categories: [1, 7]
+
+- model: book.book
+  pk: 74
+  fields:
+    title: The Sea-Wolf
+    author: 32
+    isbn: '9780141441139'
+    summary: A literary critic is rescued by a brutal sea captain.
+    publication_date: 1904-01-01
+    price: '11.99'
+    pages: 320
+    categories: [1, 7]
+
+- model: book.book
+  pk: 75
+  fields:
+    title: The Cherry Orchard
+    author: 33
+    isbn: '9780486266824'
+    summary: A Russian aristocratic family returns to their estate before it is auctioned.
+    publication_date: 1904-01-17
+    price: '6.99'
+    pages: 64
+    categories: [10, 17]
+
+- model: book.book
+  pk: 76
+  fields:
+    title: Three Sisters
+    author: 33
+    isbn: '9780486275444'
+    summary: Three sisters yearn for the excitement of Moscow while living in a provincial town.
+    publication_date: 1901-01-31
+    price: '5.99'
+    pages: 80
+    categories: [10, 16]
+
+- model: book.book
+  pk: 77
+  fields:
+    title: Madame Bovary
+    author: 34
+    isbn: '9780140449129'
+    summary: A doctor's wife seeks escape from provincial life through affairs and spending.
+    publication_date: 1856-12-01
+    price: '12.99'
+    pages: 342
+    categories: [1, 2, 3]
+
+- model: book.book
+  pk: 78
+  fields:
+    title: Sentimental Education
+    author: 34
+    isbn: '9780140449167'
+    summary: A young man's romantic education in Paris during the 1848 Revolution.
+    publication_date: 1869-11-17
+    price: '14.99'
+    pages: 480
+    categories: [1, 9]
+
+- model: book.book
+  pk: 79
+  fields:
+    title: Père Goriot
+    author: 35
+    isbn: '9780140449723'
+    summary: An elderly man sacrifices everything for his ungrateful daughters.
+    publication_date: 1835-03-01
+    price: '11.99'
+    pages: 304
+    categories: [1, 2, 10]
+
+- model: book.book
+  pk: 80
+  fields:
+    title: Eugénie Grandet
+    author: 35
+    isbn: '9780140440508'
+    summary: A young woman whose life is dominated by her miserly father.
+    publication_date: 1833-09-01
+    price: '10.99'
+    pages: 256
+    categories: [1, 2]
+
+- model: book.book
+  pk: 81
+  fields:
+    title: Germinal
+    author: 36
+    isbn: '9780140440454'
+    summary: A young migrant worker in a coal mining community leads a strike.
+    publication_date: 1885-03-01
+    price: '13.99'
+    pages: 532
+    categories: [1, 2, 20]
+
+- model: book.book
+  pk: 82
+  fields:
+    title: Nana
+    author: 36
+    isbn: '9780140447552'
+    summary: The story of a young Parisian prostitute who becomes a high-class courtesan.
+    publication_date: 1880-02-01
+    price: '12.99'
+    pages: 470
+    categories: [1, 2, 20]
+
+- model: book.book
+  pk: 83
+  fields:
+    title: The Turn of the Screw
+    author: 37
+    isbn: '9780140432664'
+    summary: A governess believes the children in her care are haunted by ghosts.
+    publication_date: 1898-01-01
+    price: '8.99'
+    pages: 96
+    categories: [1, 5, 15]
+
+- model: book.book
+  pk: 84
+  fields:
+    title: The Portrait of a Lady
+    author: 37
+    isbn: '9780141441269'
+    summary: An American woman comes to Europe and falls victim to scheming expatriates.
+    publication_date: 1881-11-01
+    price: '14.99'
+    pages: 656
+    categories: [1, 2]
+
+- model: book.book
+  pk: 85
+  fields:
+    title: Washington Square
+    author: 37
+    isbn: '9780140432558'
+    summary: A plain heiress is courted by a charming fortune hunter.
+    publication_date: 1880-12-01
+    price: '9.99'
+    pages: 224
+    categories: [1, 3]
+
+- model: book.book
+  pk: 86
+  fields:
+    title: Tess of the d'Urbervilles
+    author: 38
+    isbn: '9780141439594'
+    summary: A young peasant woman's tragic life after discovering noble ancestry.
+    publication_date: 1891-12-01
+    price: '11.99'
+    pages: 518
+    categories: [1, 2, 16]
+
+- model: book.book
+  pk: 87
+  fields:
+    title: Far from the Madding Crowd
+    author: 38
+    isbn: '9780141439655'
+    summary: A headstrong young woman inherits a farm and attracts three suitors.
+    publication_date: 1874-01-01
+    price: '12.99'
+    pages: 464
+    categories: [1, 2, 3]
+
+- model: book.book
+  pk: 88
+  fields:
+    title: The Mayor of Casterbridge
+    author: 38
+    isbn: '9780141439785'
+    summary: A man sells his wife and daughter, then rises to become mayor.
+    publication_date: 1886-05-01
+    price: '10.99'
+    pages: 384
+    categories: [1, 2, 16]
+
+- model: book.book
+  pk: 89
+  fields:
+    title: Middlemarch
+    author: 39
+    isbn: '9780141439549'
+    summary: A study of provincial life exploring the lives of several inhabitants.
+    publication_date: 1871-12-01
+    price: '14.99'
+    pages: 880
+    categories: [1, 2, 3]
+
+- model: book.book
+  pk: 90
+  fields:
+    title: Silas Marner
+    author: 39
+    isbn: '9780141439754'
+    summary: A weaver is betrayed and finds redemption through the love of an orphan girl.
+    publication_date: 1861-04-02
+    price: '8.99'
+    pages: 240
+    categories: [1, 2]
+
+- model: book.book
+  pk: 91
+  fields:
+    title: The Mill on the Floss
+    author: 39
+    isbn: '9780141439624'
+    summary: The relationship between a brother and sister in Victorian England.
+    publication_date: 1860-04-04
+    price: '11.99'
+    pages: 544
+    categories: [1, 2]
+
+- model: book.book
+  pk: 92
+  fields:
+    title: The Wonderful Wizard of Oz
+    author: 40
+    isbn: '9780141439501'
+    summary: A Kansas girl is swept away by a tornado to a magical land.
+    publication_date: 1900-05-17
+    price: '9.99'
+    pages: 224
+    categories: [1, 8, 14]
+
+- model: book.book
+  pk: 93
+  fields:
+    title: Mansfield Park
+    author: 1
+    isbn: '9780141439808'
+    summary: A poor young woman is raised by wealthy relatives.
+    publication_date: 1814-07-01
+    price: '12.99'
+    pages: 480
+    categories: [1, 2, 3]
+
+- model: book.book
+  pk: 94
+  fields:
+    title: Northanger Abbey
+    author: 1
+    isbn: '9780141439792'
+    summary: A young woman's first foray into society and her discovery of Gothic fiction.
+    publication_date: 1817-12-01
+    price: '10.99'
+    pages: 256
+    categories: [1, 2, 3, 11]
+
+- model: book.book
+  pk: 95
+  fields:
+    title: Persuasion
+    author: 1
+    isbn: '9780141439686'
+    summary: A woman is reunited with a former suitor after being persuaded to reject him.
+    publication_date: 1817-12-20
+    price: '11.99'
+    pages: 256
+    categories: [1, 2, 3]
+
+- model: book.book
+  pk: 96
+  fields:
+    title: A Christmas Carol
+    author: 2
+    isbn: '9780141389479'
+    summary: A miserly man is visited by three ghosts on Christmas Eve.
+    publication_date: 1843-12-19
+    price: '7.99'
+    pages: 104
+    categories: [1, 8, 14]
+
+- model: book.book
+  pk: 97
+  fields:
+    title: Bleak House
+    author: 2
+    isbn: '9780141439723'
+    summary: A satirical novel about the British judiciary system.
+    publication_date: 1853-03-01
+    price: '15.99'
+    pages: 1017
+    categories: [1, 2, 11, 20]
+
+- model: book.book
+  pk: 98
+  fields:
+    title: Notes from Underground
+    author: 5
+    isbn: '9780679734529'
+    summary: A philosophical novella about an isolated former civil servant.
+    publication_date: 1864-01-01
+    price: '9.99'
+    pages: 136
+    categories: [1, 12]
+
+- model: book.book
+  pk: 99
+  fields:
+    title: The Death of Ivan Ilyich
+    author: 4
+    isbn: '9780553210354'
+    summary: A judge faces his own mortality and questions the meaning of his life.
+    publication_date: 1886-01-01
+    price: '7.99'
+    pages: 86
+    categories: [1, 2, 12]
+
+- model: book.book
+  pk: 100
+  fields:
+    title: The Valley of Fear
+    author: 10
+    isbn: '9780140439137'
+    summary: Sherlock Holmes investigates a murder connected to a secret society.
+    publication_date: 1915-02-27
+    price: '9.99'
+    pages: 208
+    categories: [1, 4, 19]
