@@ -1,0 +1,359 @@
+- model: book.author
+  pk: 1
+  fields:
+    first_name: Jane
+    last_name: Austen
+    date_of_birth: 1775-12-16
+    date_of_death: 1817-07-18
+    biography: English novelist known for her six major novels interpreting, critiquing and commenting upon the British landed gentry.
+
+- model: book.author
+  pk: 2
+  fields:
+    first_name: Charles
+    last_name: Dickens
+    date_of_birth: 1812-02-07
+    date_of_death: 1870-06-09
+    biography: English writer and social critic who created some of the world's best-known fictional characters.
+
+- model: book.author
+  pk: 3
+  fields:
+    first_name: Mark
+    last_name: Twain
+    date_of_birth: 1835-11-30
+    date_of_death: 1910-04-21
+    biography: American writer, humorist, entrepreneur, publisher, and lecturer, known for The Adventures of Tom Sawyer and Adventures of Huckleberry Finn.
+
+- model: book.author
+  pk: 4
+  fields:
+    first_name: Leo
+    last_name: Tolstoy
+    date_of_birth: 1828-09-09
+    date_of_death: 1910-11-20
+    biography: Russian writer regarded as one of the greatest authors of all time, best known for War and Peace and Anna Karenina.
+
+- model: book.author
+  pk: 5
+  fields:
+    first_name: Fyodor
+    last_name: Dostoevsky
+    date_of_birth: 1821-11-11
+    date_of_death: 1881-02-09
+    biography: Russian novelist and philosopher, known for Crime and Punishment, The Idiot, and The Brothers Karamazov.
+
+- model: book.author
+  pk: 6
+  fields:
+    first_name: Herman
+    last_name: Melville
+    date_of_birth: 1819-08-01
+    date_of_death: 1891-09-28
+    biography: American novelist, short story writer, and poet, best known for his novel Moby-Dick.
+
+- model: book.author
+  pk: 7
+  fields:
+    first_name: Oscar
+    last_name: Wilde
+    date_of_birth: 1854-10-16
+    date_of_death: 1900-11-30
+    biography: Irish poet and playwright, known for his wit, flamboyance, and plays including The Importance of Being Earnest.
+
+- model: book.author
+  pk: 8
+  fields:
+    first_name: Edgar Allan
+    last_name: Poe
+    date_of_birth: 1809-01-19
+    date_of_death: 1849-10-07
+    biography: American writer, poet, editor, and literary critic, best known for his poetry and short stories of mystery and the macabre.
+
+- model: book.author
+  pk: 9
+  fields:
+    first_name: Victor
+    last_name: Hugo
+    date_of_birth: 1802-02-26
+    date_of_death: 1885-05-22
+    biography: French poet, novelist, and dramatist, considered one of the greatest French writers, known for Les Misérables and The Hunchback of Notre-Dame.
+
+- model: book.author
+  pk: 10
+  fields:
+    first_name: Arthur Conan
+    last_name: Doyle
+    date_of_birth: 1859-05-22
+    date_of_death: 1930-07-07
+    biography: British writer and physician, creator of the detective Sherlock Holmes.
+
+- model: book.author
+  pk: 11
+  fields:
+    first_name: H.G.
+    last_name: Wells
+    date_of_birth: 1866-09-21
+    date_of_death: 1946-08-13
+    biography: English writer, prolific in many genres including science fiction, known as the father of science fiction.
+
+- model: book.author
+  pk: 12
+  fields:
+    first_name: Jules
+    last_name: Verne
+    date_of_birth: 1828-02-08
+    date_of_death: 1905-03-24
+    biography: French novelist, poet, and playwright, known for his adventure novels and profound influence on science fiction.
+
+- model: book.author
+  pk: 13
+  fields:
+    first_name: Bram
+    last_name: Stoker
+    date_of_birth: 1847-11-08
+    date_of_death: 1912-04-20
+    biography: Irish author, best known for his Gothic horror novel Dracula.
+
+- model: book.author
+  pk: 14
+  fields:
+    first_name: Mary
+    last_name: Shelley
+    date_of_birth: 1797-08-30
+    date_of_death: 1851-02-01
+    biography: English novelist who wrote the Gothic novel Frankenstein at age 18.
+
+- model: book.author
+  pk: 15
+  fields:
+    first_name: Charlotte
+    last_name: Brontë
+    date_of_birth: 1816-04-21
+    date_of_death: 1855-03-31
+    biography: English novelist and poet, best known for her novel Jane Eyre.
+
+- model: book.author
+  pk: 16
+  fields:
+    first_name: Emily
+    last_name: Brontë
+    date_of_birth: 1818-07-30
+    date_of_death: 1848-12-19
+    biography: English novelist and poet, best known for her only novel Wuthering Heights.
+
+- model: book.author
+  pk: 17
+  fields:
+    first_name: Lewis
+    last_name: Carroll
+    date_of_birth: 1832-01-27
+    date_of_death: 1898-01-14
+    biography: English writer of children's fiction, notably Alice's Adventures in Wonderland and its sequel Through the Looking-Glass.
+
+- model: book.author
+  pk: 18
+  fields:
+    first_name: Robert Louis
+    last_name: Stevenson
+    date_of_birth: 1850-11-13
+    date_of_death: 1894-12-03
+    biography: Scottish novelist, essayist, and poet, best known for Treasure Island and Strange Case of Dr Jekyll and Mr Hyde.
+
+- model: book.author
+  pk: 19
+  fields:
+    first_name: Nathaniel
+    last_name: Hawthorne
+    date_of_birth: 1804-07-04
+    date_of_death: 1864-05-19
+    biography: American novelist and short story writer, known for The Scarlet Letter and The House of the Seven Gables.
+
+- model: book.author
+  pk: 20
+  fields:
+    first_name: Alexandre
+    last_name: Dumas
+    date_of_birth: 1802-07-24
+    date_of_death: 1870-12-05
+    biography: French writer whose works have been translated into many languages, known for The Three Musketeers and The Count of Monte Cristo.
+
+- model: book.author
+  pk: 21
+  fields:
+    first_name: Louisa May
+    last_name: Alcott
+    date_of_birth: 1832-11-29
+    date_of_death: 1888-03-06
+    biography: American novelist and poet, best known for the novel Little Women.
+
+- model: book.author
+  pk: 22
+  fields:
+    first_name: Jonathan
+    last_name: Swift
+    date_of_birth: 1667-11-30
+    date_of_death: 1745-10-19
+    biography: Anglo-Irish satirist, essayist, and poet, best known for Gulliver's Travels.
+
+- model: book.author
+  pk: 23
+  fields:
+    first_name: Daniel
+    last_name: Defoe
+    date_of_birth: 1660-09-13
+    date_of_death: 1731-04-24
+    biography: English trader, writer, journalist, and spy, most famous for his novel Robinson Crusoe.
+
+- model: book.author
+  pk: 24
+  fields:
+    first_name: Miguel de
+    last_name: Cervantes
+    date_of_birth: 1547-09-29
+    date_of_death: 1616-04-22
+    biography: Spanish writer widely regarded as the greatest writer in the Spanish language, known for Don Quixote.
+
+- model: book.author
+  pk: 25
+  fields:
+    first_name: Homer
+    last_name: ''
+    date_of_birth: null
+    date_of_death: null
+    biography: Ancient Greek poet, presumed author of the Iliad and the Odyssey, two epic poems that are foundational works of ancient Greek literature.
+
+- model: book.author
+  pk: 26
+  fields:
+    first_name: Dante
+    last_name: Alighieri
+    date_of_birth: 1265-05-21
+    date_of_death: 1321-09-14
+    biography: Italian poet, writer and philosopher, known for the Divine Comedy, one of the greatest works of world literature.
+
+- model: book.author
+  pk: 27
+  fields:
+    first_name: William
+    last_name: Shakespeare
+    date_of_birth: 1564-04-26
+    date_of_death: 1616-04-23
+    biography: English playwright, poet and actor, widely regarded as the greatest writer in the English language.
+
+- model: book.author
+  pk: 28
+  fields:
+    first_name: Franz
+    last_name: Kafka
+    date_of_birth: 1883-07-03
+    date_of_death: 1924-06-03
+    biography: German-speaking Bohemian novelist and short story writer, widely regarded as a major figure of 20th-century literature.
+
+- model: book.author
+  pk: 29
+  fields:
+    first_name: James
+    last_name: Joyce
+    date_of_birth: 1882-02-02
+    date_of_death: 1941-01-13
+    biography: Irish novelist, short story writer, poet, and literary critic, known for Ulysses and Dubliners.
+
+- model: book.author
+  pk: 30
+  fields:
+    first_name: Joseph
+    last_name: Conrad
+    date_of_birth: 1857-12-03
+    date_of_death: 1924-08-03
+    biography: Polish-British writer regarded as one of the greatest novelists to write in the English language.
+
+- model: book.author
+  pk: 31
+  fields:
+    first_name: Rudyard
+    last_name: Kipling
+    date_of_birth: 1865-12-30
+    date_of_death: 1936-01-18
+    biography: English journalist, short-story writer, poet, and novelist, known for The Jungle Book and Kim.
+
+- model: book.author
+  pk: 32
+  fields:
+    first_name: Jack
+    last_name: London
+    date_of_birth: 1876-01-12
+    date_of_death: 1916-11-22
+    biography: American novelist, journalist, and social activist, known for The Call of the Wild and White Fang.
+
+- model: book.author
+  pk: 33
+  fields:
+    first_name: Anton
+    last_name: Chekhov
+    date_of_birth: 1860-01-29
+    date_of_death: 1904-07-15
+    biography: Russian playwright and short story writer, considered one of the greatest writers of short fiction in history.
+
+- model: book.author
+  pk: 34
+  fields:
+    first_name: Gustave
+    last_name: Flaubert
+    date_of_birth: 1821-12-12
+    date_of_death: 1880-05-08
+    biography: French novelist, known especially for his debut novel Madame Bovary.
+
+- model: book.author
+  pk: 35
+  fields:
+    first_name: Honoré de
+    last_name: Balzac
+    date_of_birth: 1799-05-20
+    date_of_death: 1850-08-18
+    biography: French novelist and playwright, known for La Comédie humaine, a sequence of almost 100 novels and plays.
+
+- model: book.author
+  pk: 36
+  fields:
+    first_name: Émile
+    last_name: Zola
+    date_of_birth: 1840-04-02
+    date_of_death: 1902-09-29
+    biography: French novelist, the best known practitioner of the literary school of naturalism.
+
+- model: book.author
+  pk: 37
+  fields:
+    first_name: Henry
+    last_name: James
+    date_of_birth: 1843-04-15
+    date_of_death: 1916-02-28
+    biography: American-British author regarded as a key transitional figure between literary realism and literary modernism.
+
+- model: book.author
+  pk: 38
+  fields:
+    first_name: Thomas
+    last_name: Hardy
+    date_of_birth: 1840-06-02
+    date_of_death: 1928-01-11
+    biography: English novelist and poet, known for Tess of the d'Urbervilles and Far from the Madding Crowd.
+
+- model: book.author
+  pk: 39
+  fields:
+    first_name: George
+    last_name: Eliot
+    date_of_birth: 1819-11-22
+    date_of_death: 1880-12-22
+    biography: English novelist, poet, journalist, translator, and one of the leading writers of the Victorian era.
+
+- model: book.author
+  pk: 40
+  fields:
+    first_name: L. Frank
+    last_name: Baum
+    date_of_birth: 1856-05-15
+    date_of_death: 1919-05-06
+    biography: American author chiefly famous for his children's books, particularly The Wonderful Wizard of Oz.

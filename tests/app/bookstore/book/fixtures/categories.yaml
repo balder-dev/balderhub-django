@@ -1,0 +1,119 @@
+- model: book.category
+  pk: 1
+  fields:
+    name: Fiction
+    description: Literary works based on the imagination and not necessarily on fact.
+
+- model: book.category
+  pk: 2
+  fields:
+    name: Classic Literature
+    description: Works of literature that have been recognized for their outstanding quality and lasting significance.
+
+- model: book.category
+  pk: 3
+  fields:
+    name: Romance
+    description: Stories that focus on the romantic relationships between characters.
+
+- model: book.category
+  pk: 4
+  fields:
+    name: Mystery
+    description: Fiction dealing with the solution of a crime or the unraveling of secrets.
+
+- model: book.category
+  pk: 5
+  fields:
+    name: Horror
+    description: Fiction intended to frighten, scare, or disgust the reader.
+
+- model: book.category
+  pk: 6
+  fields:
+    name: Science Fiction
+    description: Fiction based on imagined future scientific or technological advances.
+
+- model: book.category
+  pk: 7
+  fields:
+    name: Adventure
+    description: Stories involving exciting undertakings and bold, risky actions.
+
+- model: book.category
+  pk: 8
+  fields:
+    name: Fantasy
+    description: Fiction featuring magical or supernatural elements not found in the real world.
+
+- model: book.category
+  pk: 9
+  fields:
+    name: Historical Fiction
+    description: Fiction set in a particular historical period, featuring authentic details of that era.
+
+- model: book.category
+  pk: 10
+  fields:
+    name: Drama
+    description: Works intended to portray life or character or to tell a story through action and dialogue.
+
+- model: book.category
+  pk: 11
+  fields:
+    name: Satire
+    description: Works using humor, irony, or exaggeration to criticize or mock human follies and vices.
+
+- model: book.category
+  pk: 12
+  fields:
+    name: Philosophy
+    description: Works dealing with fundamental questions about existence, knowledge, values, and reality.
+
+- model: book.category
+  pk: 13
+  fields:
+    name: Poetry
+    description: Literary works in metrical form or works expressing ideas in rhythmic, imaginative language.
+
+- model: book.category
+  pk: 14
+  fields:
+    name: Children's Literature
+    description: Books written for children, including picture books and novels for young readers.
+
+- model: book.category
+  pk: 15
+  fields:
+    name: Gothic Fiction
+    description: Fiction characterized by mystery, horror, and the supernatural, often set in gloomy settings.
+
+- model: book.category
+  pk: 16
+  fields:
+    name: Tragedy
+    description: Dramatic works depicting serious events culminating in an unhappy ending for the protagonist.
+
+- model: book.category
+  pk: 17
+  fields:
+    name: Comedy
+    description: Works intended to be humorous or amusing, typically with a happy ending.
+
+- model: book.category
+  pk: 18
+  fields:
+    name: Epic
+    description: Long narrative poems or works celebrating heroic deeds and events significant to a culture.
+
+- model: book.category
+  pk: 19
+  fields:
+    name: Thriller
+    description: Works characterized by fast pacing, tension, and excitement.
+
+- model: book.category
+  pk: 20
+  fields:
+    name: Social Commentary
+    description: Works that critique or comment on social issues and human behavior in society.
