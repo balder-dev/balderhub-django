@@ -1,0 +1,32 @@
+services:
+  django:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - ./tests/app/bookstore:/code
+    ports:
+      - "127.0.0.1:8000:8000"
+  seleniumfirefox:
+    image: selenium/standalone-firefox:4.35
+    container_name: ${CONTAINER_NAME_SELENIUM:-seleniumfirefox}
+    shm_size: 2gb
+    ports:
+      - "127.0.0.1:4444:4444"
+    volumes:
+      - ./docker/firefox/upload-data:/uploads:ro
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${CONTAINER_NAME_TEST:-test}
+    environment:
+      SELENIUM_HOSTNAME: seleniumfirefox
+      DJANGO_HOSTNAME: 'django'
+    volumes:
+      - ./src:/code/src
+      - ./tests:/code/tests
+    depends_on:
+      - seleniumfirefox
+      - django
