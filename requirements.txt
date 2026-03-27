@@ -1,4 +1,5 @@
 alabaster==0.7.16
+asgiref==3.11.1
 astroid==2.15.8
 babel==2.18.0
 balderhub-unit==0.0.1b0
@@ -7,6 +8,7 @@ baldertest==0.2.0
 certifi==2026.2.25
 charset-normalizer==3.4.6
 dill==0.4.1
+Django==5.2.12
 docutils==0.19
 idna==3.11
 imagesize==2.0.0
@@ -33,6 +35,7 @@ sphinxcontrib-jquery==4.1
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==2.0.0
 sphinxcontrib-serializinghtml==2.0.0
+sqlparse==0.5.5
 tomli==2.4.1
 tomlkit==0.14.0
 typing_extensions==4.15.0
