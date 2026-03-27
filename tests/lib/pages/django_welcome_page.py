@@ -10,7 +10,7 @@ class DjangoWelcomePage(HtmlPage):
 
     @property
     def applicable_on_url_schema(self) -> Url:
-        host = os.getenv('DJANGO_HOSTNAME', 'localhost')
+        host = os.getenv('SELENIUM_DJANGO_HOSTNAME', 'localhost')
         return Url(f"http://{host}:8000/")
 
     @property

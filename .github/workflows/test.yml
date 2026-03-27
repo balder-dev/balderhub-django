@@ -20,7 +20,7 @@ jobs:
           docker compose up -d
       - name: Run Tests
         run: |
-          docker compose run test balder --working-dir tests --junit=result.xml
+          docker compose run testa balder --working-dir tests --junit=result.xml
       - name: Cleanup Docker
         if: always()
         run: |
