@@ -1,6 +1,5 @@
 import balderhub.html.lib.utils.components as html
-from balderhub.html.lib.utils import Selector
 
 
 class BaseHeaderContainer(html.HtmlElement):
-    pass
+    """Base container representing the header section of a Django admin page."""
