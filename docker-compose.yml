@@ -16,14 +16,17 @@ services:
       - "127.0.0.1:4444:4444"
     volumes:
       - ./docker/firefox/upload-data:/uploads:ro
-  test:
+  testa:
     build:
       context: .
       dockerfile: Dockerfile
     container_name: ${CONTAINER_NAME_TEST:-test}
     environment:
       SELENIUM_HOSTNAME: seleniumfirefox
-      DJANGO_HOSTNAME: 'django'
+      SELENIUM_DJANGO_HOSTNAME: 'django'
+      DJANGO_SUPERUSER_USERNAME: 'testuser'
+      DJANGO_SUPERUSER_EMAIL: 'testuser@example.com'
+      DJANGO_SUPERUSER_PASSWORD: 'PfTk2UIX9s1LJFPgiBihflbjC6Ur9'
     volumes:
       - ./src:/code/src
       - ./tests:/code/tests
