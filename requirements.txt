@@ -2,7 +2,12 @@ alabaster==0.7.16
 asgiref==3.11.1
 astroid==2.15.8
 babel==2.18.0
+balderhub-gui==0.0.1b0
+balderhub-guicontrol==0.0.1b0
+balderhub-html==0.0.1b1
 balderhub-unit==0.0.1b0
+balderhub-url==0.0.1b0
+balderhub-webdriver==0.0.1b0
 balderplugin-junit==0.0.3
 baldertest==0.2.0
 certifi==2026.2.25
