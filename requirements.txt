@@ -3,6 +3,7 @@ asgiref==3.11.1
 astroid==2.15.8
 attrs==26.1.0
 babel==2.18.0
+balderhub-auth==0.0.1b0
 balderhub-gui==0.0.1b0
 balderhub-guicontrol==0.0.1b0
 balderhub-html==0.0.1b1
