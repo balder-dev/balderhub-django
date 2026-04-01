@@ -17,4 +17,5 @@ class ScenarioWelcome(balder.Scenario):
         self.Browser.welcome_page.open()
         self.Browser.welcome_page.wait_for_page()
         assert self.Browser.welcome_page.is_applicable()
-        assert "The install worked successfully! Congratulations!" == self.Browser.welcome_page.h1_title.text, self.Browser.welcome_page.h1_title.text
+        assert "The install worked successfully! Congratulations!" == self.Browser.welcome_page.h1_title.text, \
+            self.Browser.welcome_page.h1_title.text
