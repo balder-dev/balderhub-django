@@ -218,7 +218,7 @@
   pk: 25
   fields:
     first_name: Homer
-    last_name: ''
+    last_name: The Greek
     date_of_birth: null
     date_of_death: null
     biography: Ancient Greek poet, presumed author of the Iliad and the Odyssey, two epic poems that are foundational works of ancient Greek literature.
