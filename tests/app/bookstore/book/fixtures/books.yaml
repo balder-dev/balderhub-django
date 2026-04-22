@@ -1383,17 +1383,3 @@
     categories: [1, 2, 12]
     created_at: '1970-01-01 00:00:00+00:00'
     updated_at: '1970-01-01 00:00:00+00:00'
-
-- model: book.book
-  pk: 100
-  fields:
-    title: The Valley of Fear
-    author: 10
-    isbn: '9780140439137'
-    summary: Sherlock Holmes investigates a murder connected to a secret society.
-    publication_date: 1915-02-27
-    price: '9.99'
-    pages: 208
-    categories: [1, 4, 19]
-    created_at: '1970-01-01 00:00:00+00:00'
-    updated_at: '1970-01-01 00:00:00+00:00'
