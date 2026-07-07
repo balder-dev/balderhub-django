@@ -3,6 +3,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        PYTHON_VERSION: ${PYTHON_VERSION:-3.10}
+        DJANGO_VERSION: ${DJANGO_VERSION:-}
     command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     volumes:
       - ./tests/app/bookstore:/code
@@ -20,6 +23,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        PYTHON_VERSION: ${PYTHON_VERSION:-3.10}
+        DJANGO_VERSION: ${DJANGO_VERSION:-}
     container_name: ${CONTAINER_NAME_TEST:-test}
     environment:
       SELENIUM_HOSTNAME: seleniumfirefox
