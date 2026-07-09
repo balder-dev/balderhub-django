@@ -1,6 +1,5 @@
-# TODO add classes / functions from module (if any)
-# TODO delete module if it has no sub elements
+from .general_admin_model_config import GeneralAdminModelConfig
 
 __all__ = [
-
+    'GeneralAdminModelConfig',
 ]
