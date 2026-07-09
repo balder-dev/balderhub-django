@@ -6,7 +6,7 @@ babel==2.18.0
 balderhub-auth==0.0.1b0
 balderhub-gui==0.0.1b0
 balderhub-guicontrol==0.0.1b0
-balderhub-html==0.0.1b1
+balderhub-html==0.0.1b3
 balderhub-selenium==0.0.1b0
 balderhub-unit==0.0.1b0
 balderhub-url==0.0.1b0
