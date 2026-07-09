@@ -20,7 +20,7 @@ You can easily install balder with the following command.
     python -m pip install baldertest
 
 Install balderhub-django
-=====================
+========================
 
 You can install this package with the following command:
 
