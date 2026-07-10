@@ -36,3 +36,4 @@ What you will find in this package
    features.rst
    examples.rst
    utilities.rst
+   contrib.rst
