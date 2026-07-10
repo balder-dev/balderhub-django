@@ -20,8 +20,8 @@ class ChangeFormFieldsetRow(html.HtmlElement):
         # in django admin, fields in a row are contained in divs with classes that start with 'field-'
         # we find all bridges for these divs
         bridges = self.bridge.find_bridges(
-            Selector.by_xpath("./div[not(@class)]/div[contains(@class, 'flex-container')] | "
-                              "./div[contains(@class, 'form-multiline')]/div/div[contains(@class, 'flex-container')]"))
+            Selector.by_xpath(".//div[not(@class)]/div[contains(@class, 'flex-container')] | "
+                              ".//div[contains(@class, 'form-multiline')]/div/div[contains(@class, 'flex-container')]"))
         res = []
         for cur_bridge in bridges:
             # check what kind of field it is
