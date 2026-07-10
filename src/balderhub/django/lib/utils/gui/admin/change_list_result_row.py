@@ -1,6 +1,8 @@
 import balderhub.html.lib.utils.components as html
 from balderhub.html.lib.utils import Selector
 
+from .change_list_cell_element import ChangeListCellElement
+
 
 class ChangeListResultRow(html.HtmlTablerowElement):
     """Element representing a single result row in a Django admin change list table."""
@@ -10,12 +12,12 @@ class ChangeListResultRow(html.HtmlTablerowElement):
         """Returns the action select checkbox element."""
         return html.HtmlElement.by_selector(self.driver, Selector.by_css('.action-select'), parent=self)
 
-    def get_cells(self) -> list[html.HtmlTablecellElement]:
+    def get_cells(self) -> list[ChangeListCellElement]:
         """Returns a list of all cell elements in this row."""
         bridges = self.bridge.find_bridges(Selector.by_tag('td'))
-        return [html.HtmlTablecellElement(bridge) for bridge in bridges]
+        return [ChangeListCellElement(bridge) for bridge in bridges]
 
-    def get_cell_for(self, django_identifier: str) -> html.HtmlTablecellElement:
+    def get_cell_for(self, django_identifier: str) -> ChangeListCellElement:
         """
         Retrieve an HTML table cell element corresponding to the given Django field identifier.
 
@@ -24,7 +26,7 @@ class ChangeListResultRow(html.HtmlTablerowElement):
         :param django_identifier: The Django field identifier used to locate the specific cell.
         :return: An HTML table cell element associated with the given Django field identifier.
         """
-        return html.HtmlTablecellElement.by_selector(
+        return ChangeListCellElement.by_selector(
             self.driver, Selector.by_class(f"field-{django_identifier}"), parent=self
         )
 
