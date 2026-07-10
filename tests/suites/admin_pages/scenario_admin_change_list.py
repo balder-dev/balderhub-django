@@ -1,5 +1,6 @@
 import balder
 import balderhub.webdriver.lib.scenario_features
+import django
 from balderhub.html.lib.utils import Selector
 
 from tests.lib.pages import DjangoAdminChangeListPage
@@ -116,7 +117,13 @@ class ScenarioAdminChangeList(balder.Scenario):
         self.Browser.change_list_page.wait_for_page()
         result_count = self.Browser.change_list_page.content.span_result_count
         assert result_count.exists()
-        assert "99 books" == result_count.text, result_count.text
+        # TODO optimize this test (necessary because django 6.0 uses visual hidden
+        #  `<h2 id="pagination" class="visually-hidden">Pagination books</h2>` within span)
+        if django.VERSION[0] == 6:
+            assert "Pagination books\n99 books" == result_count.text, result_count.text
+        else:
+            assert "99 books" == result_count.text, result_count.text
+
 
     # --- Result table ---
 
