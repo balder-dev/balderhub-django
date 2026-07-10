@@ -36,13 +36,16 @@ class ChangeFormContainer(html.HtmlFormElement):
 
     def get_form_field_container_for(self, django_identifier: Any) -> BaseChangeFormField:
         """Returns the form field container for a specific given Django identifier."""
+
+        xpath_base = f".//div[contains(@class, 'form-row') and contains(@class, 'field-{django_identifier}')]"
+
         xpath = (
-            f".//div[contains(@class, 'form-row') and contains(@class, 'field-{django_identifier}')]"
-            f"/div[not(@class)]/div[contains(@class, 'flex-container')]"
+            f"{xpath_base}/div[not(@class)]/div[contains(@class, 'flex-container')]"
             f"[.//label[@for='id_{django_identifier}']] | "
-            f".//div[contains(@class, 'form-row') and contains(@class, 'field-{django_identifier}')]"
-            f"/div[contains(@class, 'form-multiline')]/div/div[contains(@class, 'flex-container')]"
-            f"[.//label[@for='id_{django_identifier}']]"
+            f"{xpath_base}/div[contains(@class, 'form-multiline')]/div/div[contains(@class, 'flex-container')]"
+            f"[.//label[@for='id_{django_identifier}']] | "
+            f"{xpath_base}/fieldset[.//legend[@for='id_{django_identifier}']]/div[not(@class)]"
+            f"/div[contains(@class, 'flex-container')]"
         )
         bridge = self.bridge.find_bridge(Selector.by_xpath(xpath))
         if not bridge.exists():
