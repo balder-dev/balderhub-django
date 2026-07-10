@@ -7,7 +7,15 @@ from balderhub.django.lib.utils.gui.admin.change_list_result_row import ChangeLi
 
 
 class ChangeListResultTable(html.HtmlTableElement):
-    """Element representing the result table on a Django admin change list page."""
+    """
+    Element representing the result table on a Django admin change list page.
+
+    This container element is implemented according the following structure:
+
+    .. image:: _static/balderhub_django_changelist.png
+        :align: center
+
+    """
 
     def get_header_cells(self) -> list[html.HtmlTablecellElement]:
         """Returns a list of all header cell elements in the table."""

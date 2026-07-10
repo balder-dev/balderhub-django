@@ -11,7 +11,14 @@ from .base_django_admin_page import BaseDjangoAdminPage
 
 
 class ChangeListPage(BaseDjangoAdminPage):
-    """Page object representing a Django admin change list page for listing model instances."""
+    """
+    Page object representing a Django admin change list page for listing model instances.
+
+    This page is implemented according the following structure:
+
+    .. image:: _static/balderhub_django_changelist.png
+        :align: center
+    """
 
     class InnerContent(BaseMainContentContainer):
         """Inner content container of the change list page."""
