@@ -11,7 +11,15 @@ from .change_form_submit_row import ChangeFormSubmitRow
 
 
 class ChangeFormContainer(html.HtmlFormElement):
-    """Container representing the main form element on a Django admin change form page."""
+    """
+    Container representing the main form element on a Django admin change form page.
+
+    This container element is implemented according the following structure:
+
+    .. image:: _static/balderhub_django_changeform.png
+        :align: center
+
+    """
 
     def get_all_fieldsets(self) -> list[ChangeFormFieldset]:
         """Returns a list of all fieldset containers within the form."""

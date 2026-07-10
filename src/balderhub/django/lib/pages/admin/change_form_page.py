@@ -11,7 +11,14 @@ from .base_django_admin_page import BaseDjangoAdminPage
 
 
 class ChangeFormPage(BaseDjangoAdminPage):
-    """Page object representing a Django admin change form page for editing a single model instance."""
+    """
+    Page object representing a Django admin change form page for editing a single model instance.
+
+    This page is implemented according the following structure:
+
+    .. image:: _static/balderhub_django_changeform.png
+        :align: center
+    """
 
     class InnerContent(BaseMainContentContainer):
         """Inner content container of the change form page."""
