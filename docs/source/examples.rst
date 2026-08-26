@@ -471,7 +471,7 @@ features - calling ``get_for(<YourDataItem>)`` returns a feature class that is r
 
     import balderhub.data.lib.setup_features.factories
     import balderhub.crud.lib.setup_features.factories
-    import balderhub.django.contrib.crud.pages
+    import balderhub.django.contrib.crud.pages.admin
     import balderhub.django.contrib.crud.setup_features
 
     from tests.lib.setup_features.basic_data_environment_feature import BasicDataEnvironmentFeature
@@ -501,9 +501,9 @@ features - calling ``get_for(<YourDataItem>)`` returns a feature class that is r
             # the page objects
             login_page = DjangoAdminLoginPage()
             index_page = DjangoAdminIndexPage()
-            page_add = balderhub.django.contrib.crud.pages.AdminAddItemFormPage()
-            page_update = balderhub.django.contrib.crud.pages.AdminChangeItemFormPage()
-            page_list = balderhub.django.contrib.crud.pages.AdminChangeListPage()
+            page_add = balderhub.django.contrib.crud.pages.admin.AutoAddItemFormPage()
+            page_update = balderhub.django.contrib.crud.pages.admin.AutoChangeItemFormPage()
+            page_list = balderhub.django.contrib.crud.pages.admin.AutoChangeListPage()
 
             # the CRUD setup features, created by the factories of this package
             multiple_reader = balderhub.django.contrib.crud.setup_features.factories.AutoAdminMultipleReaderFactory.get_for(BookDataItem)()
