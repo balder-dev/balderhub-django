@@ -259,11 +259,12 @@ in which you add all data items that exist on the server:
 
     # file `lib/setup_features/basic_data_environment_feature.py`
     import balderhub.data.lib.scenario_features
+    import balderhub.django.lib.utils
 
     from tests.lib.utils.data import AuthorDataItem
 
 
-    class BasicDataEnvironmentFeature(balderhub.data.lib.scenario_features.DataEnvironmentFeature):
+    class BasicDataEnvironmentFeature(balderhub.django.lib.utils.DataEnvironmentForDjangoMixin):
 
         def load_data(self):
             self._add_data([
@@ -279,7 +280,7 @@ Use the Django Mixin
 --------------------
 
 If you would like to load test data from django fixtures you can also use the
-:class:`balderhub.django.contrib.data.utils.DataEnvironmentForDjangoMixin`:
+:class:`balderhub.django.lib.utils.DataEnvironmentForDjangoMixin`:
 
 Assume your Django app ships fixtures like this one:
 
@@ -301,7 +302,7 @@ Assume your Django app ships fixtures like this one:
         updated_at: '1970-01-01 00:00:00+00:00'
 
 Simply add the mixin to your data environment feature and use its
-:meth:`load_from_django_fixture <balderhub.django.contrib.data.utils.DataEnvironmentForDjangoMixin.load_from_django_fixture>`
+:meth:`load_from_django_fixture <balderhub.django.lib.utils.DataEnvironmentForDjangoMixin.load_from_django_fixture>`
 method inside ``load_data()``:
 
 .. code-block:: python
@@ -309,7 +310,7 @@ method inside ``load_data()``:
     # file `lib/setup_features/basic_data_environment_feature.py`
     import balderhub.data.lib.scenario_features
 
-    from balderhub.django.contrib.data.utils import DataEnvironmentForDjangoMixin
+    from balderhub.django.lib.utils import DataEnvironmentForDjangoMixin
     from tests.lib.utils.data import CategoryDataItem, AuthorDataItem, BookDataItem
 
 
