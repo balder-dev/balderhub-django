@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.core.exceptions import ValidationError
 from django import forms
 
-from .models import Author, Category, Book
+from .models import Author, Category, Book, BookReview
 
 
 class AuthorAdminForm(forms.ModelForm):
@@ -47,3 +47,8 @@ class BookAdmin(admin.ModelAdmin):
         ('pages', ),
         ('summary', )
     )
+
+@admin.register(BookReview)
+class BookReviewAdmin(admin.ModelAdmin):
+    list_display = ['id', 'for_book', 'stars', 'text']
+    search_fields = ['for_book__title', 'text']
