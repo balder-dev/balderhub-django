@@ -1,5 +1,5 @@
 import balderhub.crud.lib.setup_features
-from balderhub.data.lib.utils import LookupFieldString, ResponseMessageList
+from balderhub.data.lib.utils import LookupFieldString, ResponseMessageList, SingleDataItemCollection
 
 from balderhub.django.contrib.crud.scenario_features import GeneralAdminModelConfig
 from balderhub.django.contrib.crud.pages.admin import AutoChangeListPage
@@ -36,6 +36,11 @@ class AdminMultipleReader(balderhub.crud.lib.setup_features.MultipleReaderFeatur
 
     def get_list_item_element_container(self):
         return self.page.content.result_table.get_rows()
+
+    def collect(self) -> SingleDataItemCollection:
+        if self.page.content.get_total_item_count() == 0:
+            return SingleDataItemCollection()
+        return super().collect()
 
     def item_mapping(self):
         result = {}
