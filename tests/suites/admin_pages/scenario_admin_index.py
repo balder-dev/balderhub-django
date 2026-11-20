@@ -99,7 +99,7 @@ class ScenarioAdminIndex(balder.Scenario):
         assert book_module is not None
         models = book_module.get_all_models()
         model_names = [model.a_model.text for model in models]
-        assert ["Authors", "Books", "Categories"] == model_names, model_names
+        assert ["Authors", "Book reviews", "Books", "Categories"] == model_names, model_names
 
     def test_admin_index_page_model_row_buttons(self):
         self.Browser.index_page.open()
@@ -113,4 +113,4 @@ class ScenarioAdminIndex(balder.Scenario):
                 assert model_row.a_add.exists(), f"Add link missing for model {model_row.a_model.text}"
                 assert model_row.a_change.exists(), f"Change link missing for model {model_row.a_model.text}"
                 assert model_row.a_model.exists(), f"Model link missing"
-                assert model_row.a_model.text in ['Groups', 'Users', 'Authors', 'Books', 'Categories']
+                assert model_row.a_model.text in ['Groups', 'Users', 'Authors', 'Book reviews', 'Books', 'Categories']

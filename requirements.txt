@@ -4,8 +4,8 @@ astroid==3.3.11
 attrs==26.1.0
 babel==2.18.0
 balderhub-auth==0.0.1b0
-balderhub-data==0.1.1
-balderhub-crud==0.0.1b12
+balderhub-data==0.3.0
+balderhub-crud==0.0.1b13
 balderhub-gui==0.0.1b0
 balderhub-guicontrol==0.0.1b0
 balderhub-html==0.0.1b3
