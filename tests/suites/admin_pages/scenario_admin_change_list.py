@@ -115,15 +115,11 @@ class ScenarioAdminChangeList(balder.Scenario):
     def test_list_result_count(self):
         self.Browser.change_list_page.open(app='book', model='book')
         self.Browser.change_list_page.wait_for_page()
-        result_count = self.Browser.change_list_page.content.span_result_count
+        result_count = self.Browser.change_list_page.content.paginator_row
         assert result_count.exists()
-        # TODO optimize this test (necessary because django 6.0 uses visual hidden
-        #  `<h2 id="pagination" class="visually-hidden">Pagination books</h2>` within span)
-        if django.VERSION[0] == 6:
-            assert "Pagination books\n99 books" == result_count.text, result_count.text
-        else:
-            assert "99 books" == result_count.text, result_count.text
 
+        total_item_count = self.Browser.change_list_page.content.get_total_item_count()
+        assert total_item_count == 99, total_item_count
 
     # --- Result table ---
 

@@ -1,3 +1,4 @@
+import re
 from typing import Union, List
 
 import balderhub.html.lib.utils.components as html
@@ -5,7 +6,7 @@ from balderhub.html.lib.utils import Selector
 from balderhub.url.lib.utils import Url
 
 from balderhub.django.lib.utils.gui.admin import BaseMainContentContainer, DefaultAdminHeaderContainer, \
-    ChangeListResultTable, ChangeListFilterSidebar, BreadcrumbsContainer
+    ChangeListResultTable, ChangeListFilterSidebar, BreadcrumbsContainer, PaginatorRow
 
 from .base_django_admin_page import BaseDjangoAdminPage
 
@@ -58,9 +59,20 @@ class ChangeListPage(BaseDjangoAdminPage):
             return ChangeListFilterSidebar.by_selector(self.driver, Selector.by_id('changelist-filter'), parent=self)
 
         @property
-        def span_result_count(self) -> html.HtmlSpanElement:
+        def paginator_row(self) -> PaginatorRow:
             """Returns the span element displaying the result count."""
-            return html.HtmlSpanElement.by_selector(self.driver, Selector.by_class('paginator'), parent=self)
+            return PaginatorRow.by_selector(self.driver, Selector.by_class('paginator'), parent=self)
+
+        def get_total_item_count(self) -> int:
+            """returns the total item count of the listed model instances."""
+            lines = self.paginator_row.text.splitlines()
+            regex = r'^(\d+) (.+)$'
+            relevant_lines = [line.strip() for line in lines if re.match(regex, line.strip())]
+            if len(relevant_lines) != 1:
+                raise ValueError(f'was unable to extract the total item count of the listed model instances within '
+                                 f'paginator row - extracted text lines are: {lines}')
+            match = re.match(regex, relevant_lines[0])
+            return int(match.group(1))
 
     @property
     def applicable_on_url_schema(self) -> Union[Url, List[Url]]:
