@@ -16,6 +16,7 @@ from .change_form_container import ChangeFormContainer
 from .change_form_fieldset import ChangeFormFieldset
 from .change_form_submit_row import ChangeFormSubmitRow
 from .message_element import MessageElement
+from .paginator_row import PaginatorRow
 
 __all__ = [
     "BaseFooterContainer",
@@ -36,4 +37,5 @@ __all__ = [
     "ChangeFormFieldset",
     "ChangeFormSubmitRow",
     "MessageElement",
+    "PaginatorRow",
 ]
